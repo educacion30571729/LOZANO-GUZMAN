@@ -46,10 +46,10 @@
             background-color: var(--bg-dark);
             color: var(--text-white);
             position: relative;
-            padding-bottom: 30px;
+            padding-bottom: 25px;
         }
 
-        /* Encabezado Top con Logo Oficial y Texto Alineado */
+        /* Encabezado Top con Logo y Texto al lado derecho tal cual solicitó */
         .top-header {
             display: flex;
             justify-content: space-between;
@@ -58,7 +58,7 @@
             position: absolute;
             top: 0; left: 0; width: 100%;
             z-index: 10;
-            background: linear-gradient(to bottom, rgba(8,16,26,0.9) 0%, transparent 100%);
+            background: linear-gradient(to bottom, rgba(8,16,26,0.95) 0%, transparent 100%);
         }
         .logo-wrapper {
             display: flex;
@@ -66,7 +66,7 @@
             gap: 10px;
         }
         .header-logo-img {
-            height: 50px;
+            height: 48px;
             width: auto;
             object-fit: contain;
         }
@@ -76,7 +76,7 @@
         }
         .logo-text-main {
             font-family: var(--font-serif);
-            font-size: 15px;
+            font-size: 14.5px;
             font-weight: 700;
             color: var(--white);
             line-height: 1.1;
@@ -84,7 +84,7 @@
         }
         .logo-text-sub {
             font-family: var(--font-serif);
-            font-size: 15px;
+            font-size: 14.5px;
             font-weight: 700;
             color: var(--gold);
             line-height: 1.1;
@@ -92,7 +92,7 @@
         }
         .menu-btn { color: var(--text-white); font-size: 24px; }
 
-        /* Imagen Fundida (Efecto Revista) */
+        /* Imagen de Portada con Degradado Inferior */
         .hero-image {
             width: 100%;
             height: 380px;
@@ -102,59 +102,59 @@
         .hero-image::after {
             content: '';
             position: absolute;
-            bottom: 0; left: 0; width: 100%; height: 70%;
+            bottom: 0; left: 0; width: 100%; height: 50%;
             background: linear-gradient(to bottom, transparent 0%, var(--bg-dark) 100%);
         }
 
-        /* Contenido del Hero */
+        /* Contenido del Hero Recorrido hacia abajo para no encimar la foto */
         .hero-content {
             position: relative;
             z-index: 5;
             text-align: center;
-            margin-top: -65px;
-            padding: 0 10px;
+            margin-top: 10px;
+            padding: 0 12px;
         }
-        .hero-content h2 { font-family: var(--font-serif); font-size: 30px; font-weight: 700; margin-bottom: 3px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
-        .hero-content h3 { color: var(--gold); font-size: 13px; font-weight: 600; letter-spacing: 2px; margin-bottom: 12px; text-transform: uppercase; }
-        .hero-content .quote { font-family: var(--font-serif); font-style: italic; font-size: 15px; color: #E2E8F0; margin-bottom: 18px; padding: 0 15px;}
+        .hero-content h2 { font-family: var(--font-serif); font-size: 28px; font-weight: 700; margin-bottom: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.6); }
+        .hero-content h3 { color: var(--gold); font-size: 13px; font-weight: 600; letter-spacing: 2px; margin-bottom: 10px; text-transform: uppercase; }
+        .hero-content .quote { font-family: var(--font-serif); font-style: italic; font-size: 14.5px; color: #E2E8F0; margin-bottom: 15px; padding: 0 10px;}
 
-        /* Botones de Conversión Inmediata */
-        .btn-stack { display: flex; flex-direction: column; gap: 10px; width: 95%; margin: 0 auto; }
+        /* Botones de Conversión */
+        .btn-stack { display: flex; flex-direction: column; gap: 8px; width: 95%; margin: 0 auto; }
         .btn {
             display: flex; justify-content: center; align-items: center; gap: 10px;
-            width: 100%; padding: 15px; border-radius: 12px; font-weight: 600; font-size: 15.5px;
+            width: 100%; padding: 14px; border-radius: 12px; font-weight: 600; font-size: 15px;
             text-decoration: none; transition: 0.3s; border: none; cursor: pointer;
         }
         .btn-wa { background: var(--whatsapp); color: white; box-shadow: 0 4px 15px rgba(30, 190, 86, 0.3); }
         .btn-call { background: var(--btn-dark); color: white; border: 1px solid var(--gold); }
         .btn-gold { background: var(--gold); color: var(--bg-dark); font-weight: 700; }
 
-        /* GANCHO DE DESPLAZAMIENTO (Visible de inmediato) */
+        /* GANCHO DE DESPLAZAMIENTO BAJO EL EMBUDO */
         .scroll-hook {
-            margin-top: 20px;
-            padding: 0 15px;
+            margin-top: 15px;
+            padding: 0 10px;
             text-align: center;
         }
         .scroll-hook p {
             color: var(--gold-light);
-            font-size: 15.5px;
+            font-size: 14.5px;
             font-weight: 600;
             line-height: 1.3;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
             text-shadow: 0 2px 4px rgba(0,0,0,0.8);
             text-align: center !important;
         }
         .scroll-hook i {
             color: var(--white);
-            font-size: 16px;
+            font-size: 15px;
             opacity: 0.8;
             animation: bounce 2s infinite;
         }
 
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-6px);}
-            60% {transform: translateY(-3px);}
+            40% {transform: translateY(-5px);}
+            60% {transform: translateY(-2px);}
         }
 
         /* =========================================
@@ -256,39 +256,39 @@
         .footer-links { font-size: 11px; margin-top: 15px; color: #64748B; }
 
         /* ===========================================================
-           COMPRESIÓN RESPONSIVE MÓVIL EXTREMA (Above the Fold)
+           CORRECCIÓN QUIRÚRGICA: DESPEJE DE FOTO (2/3 VISIBLES)
         =========================================================== */
         @media(max-width: 768px) {
             .hero-image {
-                height: 240px !important; /* Foto compacta para jalar todo el texto hacia arriba */
+                height: 290px !important; /* Altura ideal: Rostro, corbata y saco 100% limpios */
             }
             .hero-content {
-                margin-top: -35px !important; /* Ajuste milimétrico de solapamiento */
+                margin-top: 15px !important; /* RECORRE TODO EL TEXTO HACIA ABAJO (Cero encimado) */
             }
             .hero-content h2 {
-                font-size: 25px !important; /* Nombre claro pero compacto */
-                margin-bottom: 2px !important;
+                font-size: 26px !important; 
+                margin-bottom: 4px !important;
             }
             .hero-content h3 {
                 margin-bottom: 8px !important;
             }
             .hero-content .quote {
-                font-size: 13.5px !important;
-                margin-bottom: 15px !important;
+                font-size: 14px !important;
+                margin-bottom: 16px !important;
                 line-height: 1.4 !important;
             }
             .btn-stack {
-                gap: 8px !important; /* Botones más juntos */
+                gap: 8px !important;
             }
             .btn {
-                padding: 13px !important; /* Altura perfecta para click fácil */
-                font-size: 14.5px !important;
+                padding: 13px !important; 
+                font-size: 15px !important;
             }
             .scroll-hook {
-                margin-top: 15px !important; /* Pegamos el gancho a los botones */
+                margin-top: 15px !important; 
             }
             .scroll-hook p {
-                font-size: 14.5px !important; /* Letra visible sin desbordar el pantallaso */
+                font-size: 14.5px !important; 
             }
             p, .service-text, .trust-item p, .testimonial-card p {
                 font-size: 14.5px !important;
